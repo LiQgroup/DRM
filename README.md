@@ -21,11 +21,15 @@ Install the R package “DRM” using the R package “devtools”.
 ## Short tutorial
 1.	Import package
 
-`library(DRM)`
+```
+library(DRM)
+```
 
 2.	Overview of the package “DRM”
 
-`help(package=DRM)`
+```
+help(package=DRM)
+```
 
 3.	A toy example for the function “simreg”
 
