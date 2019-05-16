@@ -1,0 +1,21 @@
+Package: DRM
+Type: Package
+Title: Distance Regression Model
+Version: 0.0-0
+Date: 2019-4-19
+Author: Jinjuan Wang [aut],
+    Qizhai Li [aut],
+    Lin Wang [aut]
+Maintainer: Jinjuan Wang <wangjinjuan@amss.ac.cn>
+Depends:
+    MASS,
+    R(>= 2.10.0)
+Description: This package contains two functions that are used to calculate
+    p-values in the distance regression model, including drm.pf (pseudo F test
+    statistic) and fast.pf (standard error difference, calculated using asymptotic
+    distribution or permutation procedure).
+License: GPL-2
+Collate:
+    'fast.pf.R'
+    'drm.pf.R'
+RoxygenNote: 6.1.1
