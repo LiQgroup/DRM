@@ -34,3 +34,11 @@ help(package=DRM)
 3.	A toy example for the function “simreg”
 
 The function “simreg” calculates the p-value for the pseudo F test statistic using permutation procedure. Here is a toy example.
+
+```
+# Generate the matrix which combines the covariate matrix and the matrix of interest.
+> mu.x <- rep(2, 10)
+> sigma.x <- diag(rep(1,10))
+> n <- 30
+> X <- mvrnorm(n, mu.x, sigma.x)
+```
