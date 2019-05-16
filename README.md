@@ -41,4 +41,38 @@ The function “simreg” calculates the p-value for the pseudo F test statistic
 > sigma.x <- diag(rep(1,10))
 > n <- 30
 > X <- mvrnorm(n, mu.x, sigma.x)
+
+# Generate the similarity matrix.
+> B <- matrix(rnorm(10*100, mean = 3, sd = 3), nrow = 10)
+> Y <- X %*% B
+> S <- Y %*% t(Y)
+
+# Calculate the p-value for the pseudo F test statistic using permutation procedure.
+> simreg(S, 1:5, X)
 ```
+4.	A toy example for the function “sed”
+
+The function “sed” calculates the p-value for the standard error difference test using the asymptotic distribution or the permutation procedure. Here is a toy example.
+
+```
+# Generate the matrix X1 which contains the predictors to be adjusted and the matrix X2 which contains the predictors of interest.
+> mu.x <- rep(2, 10)
+> sigma.x <- diag(rep(1,10))
+> n <- 30
+> X <- mvrnorm(n, mu.x, sigma.x)
+> X1 <- X[, 1:5]
+> X2 <- X[, 6:10]
+
+# Generate the similarity matrix.
+> B <- matrix(rnorm(10*100, mean = 3, sd = 3), nrow = 10)
+> Y <- X %*% B
+> S <- Y %*% t(Y)
+
+# Calculate the p-value for the standard error difference test using the asymptotic distribution.
+> sed(X1, X2, S, permutation = FALSE)
+
+# Calculate the p-value for the standard error difference test using the permutation procedure.
+> sed(X1, X2, S, permutation = TRUE)
+```
+## Citation
+Jinjuan Wang, Wei Zhang, Wenjun Xiong, Lin Wang, Qizhai Li. A quick and efﬁcient p-value calculation for distance-based regression model. Bioinformatics (submitted).
