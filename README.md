@@ -7,7 +7,7 @@ Distance-based regression model is a commonly used statistical analysis strategy
 The package “DRM” contains two functions that can calculate p-values in the distance regression model, including drm.pf (pseudo F test statistic) and fast.pf (standard error difference, calculated using asymptotic distribution or permutation procedure).
 
 ## Dependencies on R packages
-* [MASS] (https://cran.r-project.org/web/packages/MASS/index.html)
+ [MASS] (https://cran.r-project.org/web/packages/MASS/index.html)
 
 ## Installation
 Install the R package “DRM” using the R package “[devtools](https://github.com/r-lib/devtools)”.
