@@ -75,4 +75,4 @@ The function “fast.pf” calculates the p-value for the standard error differe
 > fast.pf(X1, X2, S, permutation = TRUE)
 ```
 ## Citation
-Jinjuan Wang, Wei Zhang, Wenjun Xiong, Lin Wang, Qizhai Li. A quick and efﬁcient p-value calculation for distance-based regression model. Bioinformatics (submitted).
+Jinjuan Wang, Wei Zhang, Wenjun Xiong, Lin Wang, and Qizhai Li. A quick and efﬁcient p-value calculation for distance-based regression model. Bioinformatics (submitted).
