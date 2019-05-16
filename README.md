@@ -7,10 +7,10 @@ Distance-based regression model is a commonly used statistical analysis strategy
 The package “DRM” contains two functions that can calculate p-values in the distance regression model, including drm.pf (pseudo F test statistic) and fast.pf (standard error difference, calculated using asymptotic distribution or permutation procedure).
 
 ## Dependencies on R packages
- [MASS](https://cran.r-project.org/web/packages/MASS/index.html)
+ * [MASS](https://cran.r-project.org/web/packages/MASS/index.html)
 
 ## Installation
-Install the R package “DRM” using the R package “[devtools](https://github.com/r-lib/devtools)”.
+Install the R package “DRM” using the R package [devtools](https://github.com/r-lib/devtools).
 
 ```
 > install.packages("devtools")
@@ -25,15 +25,15 @@ Install the R package “DRM” using the R package “[devtools](https://github
 library(DRM)
 ```
 
-2.	Overview of the package “DRM”
+2.	Overview of the package DRM
 
 ```
 help(package=DRM)
 ```
 
-3.	A toy example for the function “simreg”
+3.	A toy example for the function “drm.pf”
 
-The function “simreg” calculates the p-value for the pseudo F test statistic using permutation procedure. Here is a toy example.
+The function “drm.pf” calculates the p-value for the pseudo F test statistic using permutation procedure. Here is a toy example.
 
 ```
 # Generate the matrix which combines the covariate matrix and the matrix of interest.
@@ -48,11 +48,11 @@ The function “simreg” calculates the p-value for the pseudo F test statistic
 > S <- Y %*% t(Y)
 
 # Calculate the p-value for the pseudo F test statistic using permutation procedure.
-> simreg(S, 1:5, X)
+> drm.pf(S, 1:5, X)
 ```
-4.	A toy example for the function “sed”
+4.	A toy example for the function “fast.pf”
 
-The function “sed” calculates the p-value for the standard error difference test using the asymptotic distribution or the permutation procedure. Here is a toy example.
+The function “fast.pf” calculates the p-value for the standard error difference test using the asymptotic distribution or the permutation procedure. Here is a toy example.
 
 ```
 # Generate the matrix X1 which contains the predictors to be adjusted and the matrix X2 which contains the predictors of interest.
@@ -69,10 +69,10 @@ The function “sed” calculates the p-value for the standard error difference 
 > S <- Y %*% t(Y)
 
 # Calculate the p-value for the standard error difference test using the asymptotic distribution.
-> sed(X1, X2, S, permutation = FALSE)
+> fast.pf(X1, X2, S, permutation = FALSE)
 
 # Calculate the p-value for the standard error difference test using the permutation procedure.
-> sed(X1, X2, S, permutation = TRUE)
+> fast.pf(X1, X2, S, permutation = TRUE)
 ```
 ## Citation
 Jinjuan Wang, Wei Zhang, Wenjun Xiong, Lin Wang, Qizhai Li. A quick and efﬁcient p-value calculation for distance-based regression model. Bioinformatics (submitted).
