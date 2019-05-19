@@ -60,7 +60,7 @@
 
     minVal = min(eigVal)
 
-    if(minVal < 0){
+    if(minVal < -0.001){
 
       print("The similarity matrix is not semi-definite.")
 
