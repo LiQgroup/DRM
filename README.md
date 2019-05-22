@@ -76,7 +76,7 @@ The function “fast.pf” calculates the p-value for the standard error differe
 ```
 5.	A toy example for the function “dist2simi”
 
-The function “dist2simi” transform a distance matrix to a similarity matrix. Here is a toy example.
+The function “dist2simi” transforms a distance matrix to a similarity matrix. Here is a toy example.
 
 ```
 library(MASS)
