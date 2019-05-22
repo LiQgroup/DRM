@@ -13,9 +13,11 @@ Depends:
 Description: This package contains two functions that are used to calculate
     p-values in the distance regression model, including drm.pf (pseudo F test
     statistic) and fast.pf (standard error difference, calculated using asymptotic
-    distribution or permutation procedure).
+    distribution or permutation procedure). This package also contains a function 
+    which can transform a distance matrix to a similarity matrix.
 License: GPL-2
 Collate:
     'fast.pf.R'
     'drm.pf.R'
+    'dist2simi.R'
 RoxygenNote: 6.1.1
