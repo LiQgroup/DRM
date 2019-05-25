@@ -9,8 +9,8 @@ dist2simi(D, method = "m")
 \arguments{
 \item{D}{A distance matrix.}
 
-\item{method}{The method used to conduct transformation. This must
-be one of \code{"m"}, \code{"e"}, \code{"es"}, \code{"r"},
+\item{method}{The method used for the transformation. It should
+be \code{"m"}, \code{"e"}, \code{"es"}, \code{"r"}, or
 \code{"rs"}. The default is \code{"m"}. See details.}
 }
 \value{
@@ -36,14 +36,14 @@ Available transformation methods are:
 }
 \examples{
 library(MASS)
-mu.x = rep(2, 10)
-sigma.x = diag(rep(1,10))
-n = 30
-X = mvrnorm(n, mu.x, sigma.x)
-B = matrix(rnorm(10*100, mean = 3, sd = 3), nrow = 10)
-Y = X \%*\% B
-D = dist(Y)
-S = dist2simi(D, "m")
+mu.x <- rep(2, 10)
+sigma.x <- diag(rep(1,10))
+n <- 30
+X <- mvrnorm(n, mu.x, sigma.x)
+B <- matrix(rnorm(10*100, mean = 3, sd = 3), nrow = 10)
+Y <- X \%*\% B
+D <- dist(Y)
+S <- dist2simi(D, "m")
 }
 \author{
 Jinjuan Wang.

@@ -2,7 +2,7 @@
 % Please edit documentation in R/drm.pf.R
 \name{drm.pf}
 \alias{drm.pf}
-\title{Pseudo F test in distance regression}
+\title{Pseudo F test in distance-based regression}
 \usage{
 drm.pf(simi.mat, null.space, x.mat, permute = TRUE, n.monterCarlo = 1000,
   seed = NULL)
@@ -18,7 +18,7 @@ to be adjusted.}
 the matrix of interest.}
 
 \item{permute}{A logical value indicating whether the
-\emph{p}-value is calculated based on permutation procedure. The
+\emph{p}-value is calculated based on the permutation procedure. The
 default is \code{TRUE}.}
 
 \item{n.monterCarlo}{The repeat number of the permutation
@@ -32,11 +32,11 @@ The \emph{p}-value for the pseudo \emph{F} test statistic.
 }
 \description{
 Calculate the \emph{p}-value for the pseudo \emph{F} test
-statistic using permutation procedure.
+statistic using the permutation procedure.
 }
 \details{
-x.mat[ ,null.space] indicates the covariate matrix and x.mat[
-,-null.space] indicates the predictors of interest.
+\code{x.mat[, null.space]} indicates the covariate matrix and 
+\code{x.mat[, -null.space]} indicates the predictors of interest.
 }
 \examples{
 library(MASS)

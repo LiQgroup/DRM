@@ -2,7 +2,7 @@
 % Please edit documentation in R/fast.pf.R
 \name{fast.pf}
 \alias{fast.pf}
-\title{Standard error difference in distance regression}
+\title{Standard error difference in distance-based regression}
 \usage{
 fast.pf(X1, X2, S0, permutation = FALSE, perNum = 1000)
 }
@@ -22,11 +22,11 @@ is calculated by the asymptotic distribution. The default is
 \code{1000}.}
 }
 \value{
-The \emph{p}-value for the sed test.
+The \emph{p}-value for the standard error difference test.
 }
 \description{
 Calculate the \emph{p}-value for the standard error difference
-(sed) test using the asymptotic distribution or the permutation
+test using the asymptotic distribution or the permutation
 procedure.
 }
 \details{
