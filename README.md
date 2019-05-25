@@ -81,15 +81,15 @@ The function “dist2simi” transforms a distance matrix to a similarity matrix
 ```
 library(MASS)
 # Generate a distance matrix.
-mu.x = rep(2, 10)
-sigma.x = diag(rep(1,10))
-n = 30
-X = mvrnorm(n, mu.x, sigma.x)
-B = matrix(rnorm(10*100, mean = 3, sd = 3), nrow = 10)
-Y = X %*% B
-D = dist(Y)
+mu.x <- rep(2, 10)
+sigma.x <- diag(rep(1,10))
+n <- 30
+X <- mvrnorm(n, mu.x, sigma.x)
+B <- matrix(rnorm(10*100, mean = 3, sd = 3), nrow = 10)
+Y <- X %*% B
+D <- dist(Y)
 # Transform the distance matrix to a similarity matrix.
-S = dist2simi(D, "m")
+S <- dist2simi(D, "m")
 ```
 ## Citation
 Jinjuan Wang, Wei Zhang, Wenjun Xiong, Lin Wang, and Qizhai Li. A quick and efﬁcient p-value calculation for distance-based regression model. Bioinformatics (submitted).
