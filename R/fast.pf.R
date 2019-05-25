@@ -1,6 +1,6 @@
 ##' Calculate the \emph{p}-value for the standard error difference
 ##' test using the asymptotic distribution or the permutation
-##' procedure.
+##' procedures.
 ##'
 ##' If \code{permutation} is \code{FALSE}, the \emph{p}-value is
 ##' calculated using the standard normal distribution.
