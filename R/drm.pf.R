@@ -1,9 +1,9 @@
 ##' Calculate the \emph{p}-value for the pseudo \emph{F} test
-##' statistic using permutation procedure.
+##' statistic using the permutation procedure.
 ##'
-##' x.mat[ ,null.space] indicates the covariate matrix and x.mat[
-##' ,-null.space] indicates the predictors of interest.
-##' @title Pseudo F test in distance regression
+##' \code{x.mat[, null.space]} indicates the covariate matrix and 
+##' \code{x.mat[, -null.space]} indicates the predictors of interest.
+##' @title Pseudo F test in distance-based regression
 ##' @param simi.mat A similarity matrix among the subjects.
 ##' @param null.space A numeric vector containing the indices of those
 ##' columns in \code{x.mat} corresponding to the predictors which are
@@ -11,7 +11,7 @@
 ##' @param x.mat The matrix which combines the covariate matrix and
 ##' the matrix of interest.
 ##' @param permute A logical value indicating whether the
-##' \emph{p}-value is calculated based on permutation procedure. The
+##' \emph{p}-value is calculated based on the permutation procedure. The
 ##' default is \code{TRUE}.
 ##' @param n.monterCarlo The repeat number of the permutation
 ##' procedure. The default is \code{1000}.

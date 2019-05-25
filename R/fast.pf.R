@@ -1,11 +1,11 @@
 ##' Calculate the \emph{p}-value for the standard error difference
-##' (sed) test using the asymptotic distribution or the permutation
+##' test using the asymptotic distribution or the permutation
 ##' procedure.
 ##'
 ##' If \code{permutation} is \code{FALSE}, the \emph{p}-value is
 ##' calculated using the standard normal distribution.
 
-##' @title Standard error difference in distance regression
+##' @title Standard error difference in distance-based regression
 ##' @param X1 A matrix containing the predictors to be adjusted.
 ##' @param X2 A matrix containing the predictors of interest.
 ##' @param S0 A similarity matrix.
@@ -15,7 +15,7 @@
 ##' \code{FALSE}.
 ##' @param perNum The repeat number of the permutation. The default is
 ##' \code{1000}.
-##' @return The \emph{p}-value for the sed test.
+##' @return The \emph{p}-value for the standard error difference test.
 ##' @author Jinjuan Wang.
 ##' @export
 ##' @examples
