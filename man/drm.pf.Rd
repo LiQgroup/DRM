@@ -18,21 +18,21 @@ to be adjusted.}
 the matrix of interest.}
 
 \item{permute}{A logical value indicating whether the
-\emph{p}-value is calculated based on the permutation procedure. The
+\emph{p}-value is calculated based on the permutation procedures. The
 default is \code{TRUE}.}
 
 \item{n.monterCarlo}{The repeat number of the permutation
-procedure. The default is \code{1000}.}
+procedures. The default is \code{1000}.}
 
 \item{seed}{The seed of the random number generator for the
-permutation procedure. The default is \code{NULL}.}
+permutation procedures. The default is \code{NULL}.}
 }
 \value{
 The \emph{p}-value for the pseudo \emph{F} test statistic.
 }
 \description{
 Calculate the \emph{p}-value for the pseudo \emph{F} test
-statistic using the permutation procedure.
+statistic using the permutation procedures.
 }
 \details{
 \code{x.mat[, null.space]} indicates the covariate matrix and 

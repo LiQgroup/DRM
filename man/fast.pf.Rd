@@ -27,7 +27,7 @@ The \emph{p}-value for the standard error difference test.
 \description{
 Calculate the \emph{p}-value for the standard error difference
 test using the asymptotic distribution or the permutation
-procedure.
+procedures.
 }
 \details{
 If \code{permutation} is \code{FALSE}, the \emph{p}-value is
