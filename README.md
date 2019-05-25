@@ -1,8 +1,8 @@
 # DRM
-Distance Regression Model
+Distance-based Regression Model
 
 ## Description
-Distance-based regression model is a commonly used statistical analysis strategy to identify feature patterns in genomics, genetics and other application areas. It is specially useful for high-dimensional biological or genetic data with a proper distance or similarity measure available. This model brings in a pseudo F test statistic and its signiﬁcance is computed via permutation procedure, which is computationally demanding and might restrict its application in large-scale studies. We ﬁnd that when the sample size is large, the denominator of the pseudo F test statistic is almost invariant. Therefore, the numerator is a good approximation of the F test statistic. We standardize the numerator and derive its asymptotic distribution to obtain the p-value when the sample size is large. 
+Distance-based regression model has become a powerful approach to identifying phenotypic associations in many ﬁelds including genetics, genomics, and neuroscience. It is found to be particularly useful for high-dimensional biological and genetic data that have a proper distance or similarity measure. Based on this model, a pseudo F statistic is conventionally employed to perform the test. Its statistical signiﬁcance is assessed by permutation procedures, which are usually computationally demanding and thus limit the application of the distance-based regression approach in large-scale studies. By noticing that the denominator of the pseudo F statistic is almost constant when the sample size is large, we develop a test based on the numerator and further derive its asymptotic distribution. The analyses of simulated data demonstrate the accuracy and computational efﬁciency of the asymptotic distribution. 
 
 The package DRM contains two functions that can calculate p-values in the distance regression model, including drm.pf (pseudo F test statistic) and fast.pf (standard error difference, calculated using asymptotic distribution or permutation procedure). This package also contains a function which can transform a distance matrix to a similarity matrix.
 
