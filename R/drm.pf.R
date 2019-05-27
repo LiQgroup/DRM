@@ -18,7 +18,7 @@
 ##' @param seed The seed of the random number generator for the
 ##' permutation procedures. The default is \code{NULL}.
 ##' @return The \emph{p}-value for the pseudo \emph{F} test statistic.
-##' @author Jinjuan Wang.
+##' @author Qizhai Li.
 ##' @export
 ##' @examples
 ##' library(MASS)

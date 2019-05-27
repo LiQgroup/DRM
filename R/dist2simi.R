@@ -19,7 +19,7 @@
 ##' be \code{"m"}, \code{"e"}, \code{"es"}, \code{"r"}, or
 ##' \code{"rs"}. The default is \code{"m"}. See details.
 ##' @return A similarity matrix.
-##' @author Jinjuan Wang.
+##' @author Jinjuan Wang and Qizhai Li.
 ##' @export
 ##' @examples
 ##' library(MASS)
@@ -29,7 +29,7 @@
 ##' X <- mvrnorm(n, mu.x, sigma.x)
 ##' B <- matrix(rnorm(10*100, mean = 3, sd = 3), nrow = 10)
 ##' Y <- X %*% B
-##' D <- dist(Y)
+##' D <- as.matrix(dist(Y))
 ##' S <- dist2simi(D, "m")
 
 dist2simi <- function(D, method = "m")

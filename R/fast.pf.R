@@ -1,6 +1,6 @@
-##' Calculate the \emph{p}-value for the standard error difference
-##' test using the asymptotic distribution or the permutation
-##' procedures.
+##' Calculate the \emph{p}-value for the the fast-pF test statistic 
+##' (standardized numerator of the pseudo F test) using the asymptotic distribution 
+##' or the permutation procedures.
 ##'
 ##' If \code{permutation} is \code{FALSE}, the \emph{p}-value is
 ##' calculated using the standard normal distribution.
@@ -16,7 +16,7 @@
 ##' @param perNum The repeat number of the permutation. The default is
 ##' \code{1000}.
 ##' @return The \emph{p}-value for the standard error difference test.
-##' @author Jinjuan Wang.
+##' @author Jinjuan Wang and Qizhai Li.
 ##' @export
 ##' @examples
 ##' library(MASS)
