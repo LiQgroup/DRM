@@ -52,7 +52,7 @@ The function “drm.pf” calculates the p-value for the pseudo F test statistic
 ```
 4.	A toy example for the function “fast.pf”
 
-The function “fast.pf” calculates the p-value for the fast-pF test statistic (standardized numerator of pseudo F test) using the asymptotic distribution or the permutation procedures. Here is a toy example.
+The function “fast.pf” calculates the p-value for the fast-pF test statistic (standardized numerator of the pseudo F test) using the asymptotic distribution or the permutation procedures. Here is a toy example.
 
 ```
 # Generate the matrix X1 which contains the predictors to be adjusted and the matrix X2 which contains the predictors of interest.
