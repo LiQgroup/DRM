@@ -4,7 +4,7 @@ Distance-based Regression Model
 ## Description
 Distance-based regression model has become a powerful approach to identifying phenotypic associations in many ﬁelds including genetics, genomics, and neuroscience. It is found to be particularly useful for high-dimensional biological and genetic data that have a proper distance or similarity measure. Based on this model, a pseudo F statistic is conventionally employed to perform the test. Its statistical signiﬁcance is assessed by permutation procedures, which are usually computationally demanding and thus limit the application of the distance-based regression approach in large-scale studies. By noticing that the denominator of the pseudo F statistic is almost constant during permutation procudures when the sample size is large, we develop a test based on the numerator and further derive its asymptotic distribution. The analyses of simulated data demonstrate the accuracy and computational efﬁciency of the asymptotic distribution. 
 
-The package DRM contains two functions that can calculate p-values in the distance-based regression model, including drm.pf (the pseudo F test statistic) and fast.pf (standardized numerator of the pseudo F test statistic, calculated using the asymptotic distribution or permutation procedures). This package also contains a function which can transform a distance matrix to a similarity matrix.
+The package DRM contains two functions that can calculate p-values in the distance-based regression model, including drm.pf (the pseudo F test statistic) and fast.pf (the standardized numerator of the pseudo F test statistic, calculated using the asymptotic distribution or permutation procedures). This package also contains a function which can transform a distance matrix to a similarity matrix.
 
 ## Dependencies on R packages
  * [MASS](https://cran.r-project.org/web/packages/MASS/index.html)
@@ -52,7 +52,7 @@ The function “drm.pf” calculates the p-value for the pseudo F test statistic
 ```
 4.	A toy example for the function “fast.pf”
 
-The function “fast.pf” calculates the p-value for the fast-pF test statistic (standardized numerator of the pseudo F test statistic) using the asymptotic distribution or the permutation procedures. Here is a toy example.
+The function “fast.pf” calculates the p-value for the fast-pF test statistic (the standardized numerator of the pseudo F test statistic) using the asymptotic distribution or permutation procedures. Here is a toy example.
 
 ```
 # Generate the matrix X1 which contains the predictors to be adjusted and the matrix X2 which contains the predictors of interest.
