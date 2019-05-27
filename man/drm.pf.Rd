@@ -50,5 +50,5 @@ S <- Y \%*\% t(Y)
 drm.pf(S, 1:5, X)
 }
 \author{
-Jinjuan Wang.
+Qizhai Li.
 }

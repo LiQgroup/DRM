@@ -42,9 +42,9 @@ n <- 30
 X <- mvrnorm(n, mu.x, sigma.x)
 B <- matrix(rnorm(10*100, mean = 3, sd = 3), nrow = 10)
 Y <- X \%*\% B
-D <- dist(Y)
+D <- as.matrix(dist(Y))
 S <- dist2simi(D, "m")
 }
 \author{
-Jinjuan Wang.
+Jinjuan Wang and Qizhai Li.
 }

@@ -25,9 +25,9 @@ is calculated by the asymptotic distribution. The default is
 The \emph{p}-value for the standard error difference test.
 }
 \description{
-Calculate the \emph{p}-value for the standard error difference
-test using the asymptotic distribution or the permutation
-procedures.
+Calculate the \emph{p}-value for the the fast-pF test statistic 
+(standardized numerator of the pseudo F test) using the asymptotic distribution 
+or the permutation procedures.
 }
 \details{
 If \code{permutation} is \code{FALSE}, the \emph{p}-value is
@@ -47,5 +47,5 @@ X2 <- X[, 6:10]
 fast.pf(X1, X2, S, permutation = FALSE)
 }
 \author{
-Jinjuan Wang.
+Jinjuan Wang and Qizhai Li.
 }
