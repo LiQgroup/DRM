@@ -1,6 +1,6 @@
 ##' Calculate the \emph{p}-value for the fast-pF test statistic 
-##' (standardized numerator of the pseudo F test) using the asymptotic distribution 
-##' or the permutation procedures.
+##' (standardized numerator of the pseudo F test statistic) using 
+##' the asymptotic distribution or the permutation procedures.
 ##'
 ##' If \code{permutation} is \code{FALSE}, the \emph{p}-value is
 ##' calculated using the standard normal distribution.
