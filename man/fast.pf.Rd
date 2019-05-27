@@ -25,7 +25,7 @@ is calculated by the asymptotic distribution. The default is
 The \emph{p}-value for the standard error difference test.
 }
 \description{
-Calculate the \emph{p}-value for the the fast-pF test statistic 
+Calculate the \emph{p}-value for the fast-pF test statistic 
 (standardized numerator of the pseudo F test) using the asymptotic distribution 
 or the permutation procedures.
 }
