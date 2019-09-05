@@ -92,4 +92,4 @@ library(MASS)
 > S <- dist2simi(D, "m")
 ```
 ## Citation
-Jinjuan Wang, Wei Zhang, Wenjun Xiong, Lin Wang, and Qizhai Li. A fast and efﬁcient p-value calculation for distance-based regression model. Bioinformatics (submitted).
+Li Q, Wacholder S, Hunter DJ, Hoover RN, Chanock S, Thomas G, Yu K (2009). Genetic Background Comparison Using Distance-Based Regression, with Applications in Population Stratification Evaluation and Adjustment. Genetic Epidemiology, 33(5), 432-441.
