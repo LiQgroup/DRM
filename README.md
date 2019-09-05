@@ -19,7 +19,7 @@ Install the R package DRM using the R package [devtools](https://github.com/r-li
 ```
 
 ## Short tutorial
-1.	Import package
+1.	Load package
 
 ```
 library(DRM)
