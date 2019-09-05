@@ -1,8 +1,8 @@
 Package: DRM
 Type: Package
 Title: Distance-based Regression Model
-Version: 0.0-0
-Date: 2019-4-19
+Version: 1.0-0
+Date: 2019-9-5
 Author: Jinjuan Wang [aut],
 	Wei Zhang [aut],
 	Wenjun Xiong [aut],
